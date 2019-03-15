@@ -39,7 +39,9 @@ public class Condition_Loop_Array {
         }else
             {
                 System.out.println(" Error - Invalid Code");
+
             }
+        System.out.println(result);
         System.out.println("** End Program** ");
    }
 }
