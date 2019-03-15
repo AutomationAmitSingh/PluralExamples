@@ -15,6 +15,8 @@ public class Main {
         System.out.println(dataTypesCasting.getToDouble());
         System.out.println(dataTypesCasting.getToLong());
         System.out.println("Amit Successfully completed java program from IntelliJ to GitHub to Jenkins");
+        Condition_Loop_Array conditionLoopArray = new Condition_Loop_Array();
+        conditionLoopArray.simpleIfCondition();
 
     }
 }
