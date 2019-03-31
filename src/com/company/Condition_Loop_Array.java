@@ -41,7 +41,7 @@ public class Condition_Loop_Array {
                 System.out.println(" Error - Invalid Code");
 
             }
-        System.out.println(result);
+        System.out.println(" Conditional assignment value : "+result);
         System.out.println("** End Program** ");
    }
 }
