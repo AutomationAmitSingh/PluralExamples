@@ -22,6 +22,9 @@ public class Main {
         conditionLoopArray.conditionForLoop();
         conditionLoopArray.conditionArrays();
         conditionLoopArray.conditonForEachLoop();
+        conditionLoopArray.condtionSwitchCase();
+        Just_By_Array justByArray = new Just_By_Array();
+        justByArray.calculatingArrayValues();
 
     }
 }

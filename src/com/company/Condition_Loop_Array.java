@@ -95,8 +95,30 @@ public class Condition_Loop_Array {
     public void conditonForEachLoop()
     {
         float[] theVals = {10.f , 15.0f , 20.0f};
+        float sum = 0.0f;
         for (float currentValue: theVals) {
             System.out.println(" The for each loop values : "+currentValue);
+            sum += currentValue;
+        }
+        System.out.println(" Total sum by for each loop is : "+sum);
+    }
+
+    public void condtionSwitchCase()
+    {
+        int iVal = 10;
+        switch ( iVal % 2 )
+        {
+            case 0 :
+                System.out.print(iVal);
+                System.out.println(" is even ");
+                break;
+            case 1 :
+                System.out.print(iVal);
+                System.out.println(" is odd ");
+                break;
+            default:
+                System.out.println(" oops its broken ");
+                break;
         }
     }
 }
