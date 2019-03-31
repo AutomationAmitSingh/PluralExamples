@@ -68,4 +68,35 @@ public class Condition_Loop_Array {
            System.out.println();
        }while(table < 1000);
    }
+
+   public void conditionForLoop()
+   {
+       for (int value = 1; value <100; value*=2)
+       {
+           System.out.println(" This is the value number : "+value);
+       }
+   }
+
+   public void conditionArrays()
+   {
+       float[] theVals = new float[3];
+       theVals[0] = 10.0f;
+       theVals[1] = 15.0f;
+       theVals[2] = 20.0f;
+       float sum = 0.0f;
+       for (int i = 0; i <= theVals.length-1; i++)
+       {
+           sum += theVals[i];
+       }
+       System.out.println(" The sum using array is : "+sum);
+
+   }
+
+    public void conditonForEachLoop()
+    {
+        float[] theVals = {10.f , 15.0f , 20.0f};
+        for (float currentValue: theVals) {
+            System.out.println(" The for each loop values : "+currentValue);
+        }
+    }
 }

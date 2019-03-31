@@ -19,6 +19,9 @@ public class Main {
         conditionLoopArray.simpleIfCondition();
         conditionLoopArray.conditionWhileLoop();
         conditionLoopArray.conditionDoWhileloop();
+        conditionLoopArray.conditionForLoop();
+        conditionLoopArray.conditionArrays();
+        conditionLoopArray.conditonForEachLoop();
 
     }
 }
