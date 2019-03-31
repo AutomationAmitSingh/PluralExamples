@@ -44,4 +44,28 @@ public class Condition_Loop_Array {
         System.out.println(" Conditional assignment value : "+result);
         System.out.println("** End Program** ");
    }
+
+   public void conditionWhileLoop()
+   {
+       int factNumber = 7;
+       int factorial = 1;
+       while (factNumber>1)
+       {
+           factorial *= factNumber--;
+       }
+
+       System.out.println(" Factorial of seven is : "+factorial);
+   }
+
+   public void conditionDoWhileloop ()
+   {
+       int table = 10;
+       do {
+           System.out.print(table);
+           System.out.print(" * 2 = ");
+           table *= 2;
+           System.out.print(table);
+           System.out.println();
+       }while(table < 1000);
+   }
 }

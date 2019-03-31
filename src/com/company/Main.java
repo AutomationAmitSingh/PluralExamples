@@ -17,6 +17,8 @@ public class Main {
         System.out.println("Amit Successfully completed java program from IntelliJ via GitHub to Jenkins");
         Condition_Loop_Array conditionLoopArray = new Condition_Loop_Array();
         conditionLoopArray.simpleIfCondition();
+        conditionLoopArray.conditionWhileLoop();
+        conditionLoopArray.conditionDoWhileloop();
 
     }
 }
