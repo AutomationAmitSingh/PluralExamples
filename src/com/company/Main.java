@@ -25,6 +25,7 @@ public class Main {
         conditionLoopArray.condtionSwitchCase();
         Just_By_Array justByArray = new Just_By_Array();
         justByArray.calculatingArrayValues();
+        justByArray.calculatingSwitchArray();
 
     }
 }

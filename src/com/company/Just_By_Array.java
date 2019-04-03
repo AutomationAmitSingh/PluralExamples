@@ -56,4 +56,36 @@ public class Just_By_Array {
             System.out.println(eachResult);
         }
     }
+
+    public void calculatingSwitchArray ()
+    {
+        for ( int i = 0; i < opCodes.length; i++)
+        {
+           switch (opCodes[i])
+           {
+               case 'a' :
+                   result[i] = leftValue[i] + rightValue[i];
+                   break;
+               case 's' :
+                   result[i] = leftValue[i] - rightValue[i];
+                   break;
+               case 'd' :
+                   result[i] = rightValue[i] != 0.0d ? leftValue[i]/rightValue[i] : 0.0d;
+                   break;
+               case 'm' :
+                   result[i] = leftValue[i] * rightValue[i];
+                   break;
+                   default :
+                       System.out.println(" Error - Invalid code");
+                       result[i] = 0.0d;
+                       break;
+           }
+
+        }
+
+        for (double eachResult: result) {
+            System.out.print(" The result : ");
+            System.out.println(eachResult);
+        }
+    }
  }
