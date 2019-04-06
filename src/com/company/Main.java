@@ -52,8 +52,35 @@ public class Main {
         System.out.println(" Number of passengers in the flight2 : " +flight2.passengers);
         flight.showSum(7.5f,1.4f,1);
 
+        // Math Equation class calling by reference
+
+        Math_Equation[] math_equations = new Math_Equation[4];
+        math_equations[0] = create( 100.0d, 50.0d, 'd');
+        math_equations[1] = create( 25.0d, 92.0d, 'a');
+        math_equations[2] = create( 225.0d, 17.0d, 's');
+        math_equations[3] = create( 11.0d, 3.0d, 'm');
+
+        for ( Math_Equation equation: math_equations) {
+
+            equation.execute();
+            System.out.print(" result = ");
+            System.out.println(equation.result);
+        }
+
+        // Using setter (Mutator) getter (Accessors)
 
 
 
+    }
+
+
+    public static Math_Equation create( double leftVal, double rightVal, char opCode)
+    {
+        Math_Equation math_equation = new Math_Equation();
+        math_equation.leftVal = leftVal;
+        math_equation.rightVal = rightVal;
+        math_equation.opCodes = opCode;
+
+        return math_equation;
     }
 }
