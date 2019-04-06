@@ -63,13 +63,24 @@ public class Main {
         for ( Math_Equation equation: math_equations) {
 
             equation.execute();
-            System.out.print(" result = ");
+            System.out.print(" Through math equation result = ");
             System.out.println(equation.result);
         }
 
         // Using setter (Mutator) getter (Accessors)
 
+        With_Setter_Getter[] with_setter_getters = new With_Setter_Getter[4];
+        with_setter_getters[0] = makeIt(100.0d, 50.0d, 'd');
+        with_setter_getters[1] = makeIt(25.0d, 92.0d, 'a');
+        with_setter_getters[2] = makeIt(225.0d, 17.0d, 's');
+        with_setter_getters[3] = makeIt(11.0d, 3.0d, 'm');
 
+        for ( With_Setter_Getter with_setter_getter: with_setter_getters) {
+
+            with_setter_getter.execute();
+            System.out.print(" Through setter getter result = ");
+            System.out.println(with_setter_getter.getResult());
+        }
 
     }
 
@@ -82,5 +93,15 @@ public class Main {
         math_equation.opCodes = opCode;
 
         return math_equation;
+    }
+
+    public static With_Setter_Getter makeIt( double leftVal, double rightVal, char opCode)
+    {
+        With_Setter_Getter with_setter_getter = new With_Setter_Getter();
+        with_setter_getter.setLeftVal(leftVal);
+        with_setter_getter.setRightVal(rightVal);
+        with_setter_getter.setOpCodes(opCode);
+
+        return with_setter_getter;
     }
 }
