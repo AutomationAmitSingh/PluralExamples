@@ -69,6 +69,11 @@ public class Main {
 
         // Using setter (Mutator) getter (Accessors)
 
+        /*With_Setter_Getter with_setter_getter = new With_Setter_Getter();
+        with_setter_getter.execute();
+        System.out.print(" Test = ");
+        System.out.println(with_setter_getter.getResult());*/
+
         With_Setter_Getter[] with_setter_getters = new With_Setter_Getter[4];
         with_setter_getters[0] = makeIt(100.0d, 50.0d, 'd');
         with_setter_getters[1] = makeIt(25.0d, 92.0d, 'a');
@@ -80,6 +85,33 @@ public class Main {
             with_setter_getter.execute();
             System.out.print(" Through setter getter result = ");
             System.out.println(with_setter_getter.getResult());
+        }
+
+    // Method with constructor to execute need to comment makeItConstructor() method
+
+    With_Constructor[] with_constructors = new With_Constructor[4];
+    /*with_constructors[0] = new With_Constructor(100.0d, 50.0d, 'd');
+    with_constructors[1] = new With_Constructor(25.0d, 92.0d, 'a');
+    with_constructors[2] = new With_Constructor(225.0d, 17.0d, 's');
+    with_constructors[3] = new With_Constructor(11.0d, 3.0d, 'm');
+
+        for( With_Constructor with_constructor: with_constructors) {
+
+        with_constructor.execute();
+        System.out.print(" Through constructor result = ");
+        System.out.println(with_constructor.getResult());
+    }*/
+
+        with_constructors[0] = makeItConstructor(100.0d, 50.0d, 'd');
+        with_constructors[1] = makeItConstructor(25.0d, 92.0d, 'a');
+        with_constructors[2] = makeItConstructor(225.0d, 17.0d, 's');
+        with_constructors[3] = makeItConstructor(11.0d, 3.0d, 'm');
+
+        for( With_Constructor with_constructor: with_constructors) {
+
+            with_constructor.execute();
+            System.out.print(" Through constructor result = ");
+            System.out.println(with_constructor.getResult());
         }
 
     }
@@ -104,4 +136,18 @@ public class Main {
 
         return with_setter_getter;
     }
+
+
+    public static With_Constructor makeItConstructor(double leftVal, double rightVal, char opCode)
+    {
+        With_Constructor with_constructors = new With_Constructor();
+        with_constructors.setLeftVal(leftVal);
+        with_constructors.setRightVal(rightVal);
+        with_constructors.setOpCodes(opCode);
+
+        return with_constructors;
+    }
+
+
+
 }
