@@ -1,6 +1,11 @@
 package com.company;
 
-public class Main {
+public class Main extends Super {
+	
+	public Main(int index) {
+		// TODO Auto-generated constructor stub
+		index = index;
+	}
 
     public static void main(String[] args) {
 	// write your code here
@@ -113,6 +118,9 @@ public class Main {
             System.out.print(" Through constructor result = ");
             System.out.println(with_constructor.getResult());
         }
+        
+        Main myMain = new Main(10);
+        System.out.println(" Will print Super class value : "+myMain.index);
 
     }
 
