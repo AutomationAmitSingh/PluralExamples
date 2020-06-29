@@ -10,6 +10,10 @@ public class Main extends Super {
     public static void main(String[] args) {
 	// write your code here
         System.out.println(" A Simple Java Program");
+        
+        TestApp app = new TestApp();
+        System.out.println(app.x + " " + app.y);
+        
 
         // Data type casting class calling below using reference
 
