@@ -121,6 +121,7 @@ public class Main extends Super {
         
         Main myMain = new Main(10);
         System.out.println(" Will print Super class value : "+myMain.index);
+        System.out.println(" Entered text at line 124");
 
     }
 
