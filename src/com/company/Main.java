@@ -128,6 +128,11 @@ public class Main extends Super {
         System.out.println(" Entered text at line 124");
         System.out.println(" Entered text at line 125");
 
+        Get_Sum_Unique_Integer get_sum_unique_integer = new Get_Sum_Unique_Integer();
+        int [] random = {7,7,8,9,5,3,4,2};
+        int sum = get_sum_unique_integer.get_Sum_Unique_Integer(random);
+        System.out.println(sum);
+
 
     }
 
