@@ -11,8 +11,8 @@ class Employees
 
     Employees(String eName, int salary)
     {
-       this.eName = eName;
-       this.salary = salary;
+        this.eName = eName;
+        this.salary = salary;
     }
 }
 
@@ -23,6 +23,7 @@ public class Function_Type1 {
     {
         ArrayList<Employees> empList = new ArrayList<Employees>();
         empList.add(new Employees("David",50000));
+        empList.add(new Employees("Amit",40000));
         empList.add(new Employees("John",30000));
         empList.add(new Employees("Mary",20000));
 
@@ -31,7 +32,7 @@ public class Function_Type1 {
             int sal = e.salary;
             if(sal >= 10000 && sal <= 20000)
             {
-              return (sal * 10/100);
+                return (sal * 10/100);
             }else if(sal > 20000 && sal <= 30000)
             {
                 return (sal * 8/100);
@@ -47,11 +48,11 @@ public class Function_Type1 {
 
         for(Employees emp : empList)
         {
-          int bonus = fn.apply(emp);
-          if(p.test(bonus)) {
-              System.out.println("Employee name : " + emp.eName + " and salary : " + emp.salary);
-              System.out.println("Bonus amount is : " + bonus);
-          }
+            int bonus = fn.apply(emp);
+            if(p.test(bonus)) {
+                System.out.println("Employee name : " + emp.eName + " and salary : " + emp.salary);
+                System.out.println("Bonus amount is : " + bonus);
+            }
         }
     }
 
