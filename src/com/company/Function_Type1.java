@@ -3,6 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 class Employees
 {
@@ -54,6 +55,10 @@ public class Function_Type1 {
                 System.out.println("Bonus amount is : " + bonus);
             }
         }
+
+        empList.stream().filter(sal -> sal.salary > 30000).forEach(s -> System.out.println(s.eName));
+        empList.stream().filter(sal -> sal.salary > 30000).forEach(System.out :: println);
+
     }
 
 
