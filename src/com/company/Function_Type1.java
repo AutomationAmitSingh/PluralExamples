@@ -58,6 +58,7 @@ public class Function_Type1 {
 
         empList.stream().filter(sal -> sal.salary > 30000).forEach(s -> System.out.println(s.eName));
         empList.stream().filter(sal -> sal.salary > 30000).forEach(System.out :: println);
+        System.out.println(empList.stream().filter(sal -> sal.salary > 30000).collect(Collectors.toList()));
 
     }
 
